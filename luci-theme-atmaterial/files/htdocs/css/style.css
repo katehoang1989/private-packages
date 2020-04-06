@@ -506,11 +506,9 @@ header > .container > a[class="brand"]:after {
 }
 
 .main > .main-left > .nav > li > a[data-title="Logout"] {
-    padding-left:36px;
-    line-height:40px;
+    content: "\e005";
 }
 .main > .main-left > .nav > li > a[data-title="Logout"]:before {
-    content: "\e005";
     display: inline-block;
     top: -1px;
     left:-10px;
