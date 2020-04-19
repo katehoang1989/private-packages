@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 m = Map("vsftpd", translate("vsftpd - General Settings"))
 
-sl = m:section(NamedSection, "listensettings", "listensettings", translate("Listening Settings"))
+sl = m:section(NamedSection, "listeningsettings", "listeningsettings", translate("Listening Settings"))
 
 o = sl:option(Flag, "enable4", translate("Enable IPv4"))
 o.rmempty = false
