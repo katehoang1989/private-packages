@@ -78,7 +78,7 @@ sl = m:section(NamedSection, "local", "local", translate("Local Users"))
 o = sl:option(Flag, "enabled", translate("Enable local user"))
 o.rmempty = false
 
-o = sl:option(Value, "root", translate("Root directory"), translate("Leave empty will use user's home directory"))
+o = sl:option(Value, "root", translate("Home directory"), translate("Leave empty will use user's home directory"))
 o.default = ""
 
 

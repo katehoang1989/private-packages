@@ -20,7 +20,7 @@ o.default = false
 o = sa:option(Value, "username", translate("Username"), translate("An actual local user to handle anonymous user"))
 o.default = "ftp"
 
-o = sa:option(Value, "root", translate("Root directory"))
+o = sa:option(Value, "root", translate("Home directory"))
 o.default = "/home/ftp"
 
 o = sa:option(Value, "umask", translate("File mode umask"))
