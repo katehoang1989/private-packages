@@ -186,6 +186,7 @@ MIME_TYPES = {
     ["mpg"]   = "video/mpeg";
     ["mpeg"]  = "video/mpeg";
     ["avi"]   = "video/x-msvideo";
+    ["mp4"]   = "video/mp4";
 }
 
 function to_mime(filename)

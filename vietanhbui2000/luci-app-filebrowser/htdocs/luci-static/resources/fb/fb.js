@@ -143,8 +143,8 @@ String.prototype.replaceAll = function(search, replacement) {
             + '<td class="cbi-value-field cbi-value-date">'+o.date+'</td>'
             + '<td class="cbi-value-field cbi-value-size">'+o.size+'</td>'
             + '<td class="cbi-value-field cbi-value-perm">'+o.perms+'</td>'
-            + '<td class="cbi-section-table-cell"><button class="cbi-button cbi-button-edit">重命名</button>\
-                <button class="cbi-button cbi-button-remove">删除</button></td>'
+            + '<td class="cbi-section-table-cell"><button class="cbi-button cbi-button-edit">Rename</button>\
+                <button class="cbi-button cbi-button-remove">Delete</button></td>'
             + '</tr>';
         }
       }
