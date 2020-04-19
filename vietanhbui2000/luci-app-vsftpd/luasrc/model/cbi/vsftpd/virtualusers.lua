@@ -20,7 +20,7 @@ o.default = false
 o = sv:option(Value, "username", translate("Username"), translate("An actual local user to handle virtual users"))
 o.default = "ftp"
 
-s = m:section(TypedSection, "userslist", translate("Users list"))
+s = m:section(TypedSection, "userslist", translate("Users List"))
 s.template = "cbi/tblsection"
 s.extedit  = luci.dispatcher.build_url("admin/services/vsftpd/item/%s")
 s.addremove = true
