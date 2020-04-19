@@ -1,4 +1,4 @@
-# Copyright 2019 monwf (boluo2@gmail.com) and giaulo
+# Copyright (C) 2020 vietanhbui2000
 #
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
