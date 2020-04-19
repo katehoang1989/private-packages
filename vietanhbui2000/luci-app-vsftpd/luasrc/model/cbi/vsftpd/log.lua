@@ -17,7 +17,7 @@ sl = m:section(NamedSection, "logsettings", "logsettings", translate("Log Settin
 o = sl:option(Flag, "syslog", translate("Enable syslog"))
 o.default = false
 
-o = sl:option(Flag, "xreflog", translate("Enable file log"))
+o = sl:option(Flag, "xreflog", translate("Enable log file"))
 o.default = true
 
 o = sl:option(Value, "file", translate("Log file"))
