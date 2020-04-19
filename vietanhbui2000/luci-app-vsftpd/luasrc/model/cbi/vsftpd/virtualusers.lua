@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 m = Map("vsftpd", translate("vsftpd - Virtual Users Settings"))
 
-sv = m:section(NamedSection, "virtualusers", "virtualusers", translate("Settings"))
+sv = m:section(NamedSection, "virtualuserssettings", "virtualuserssettings", translate("Settings"))
 
 o = sv:option(Flag, "enabled", translate("Enabled"))
 o.default = false

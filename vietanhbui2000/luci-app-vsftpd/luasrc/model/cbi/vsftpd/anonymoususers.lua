@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 m = Map("vsftpd", translate("vsftpd - Anonymous Users Settings"))
 
-sa = m:section(NamedSection, "anonymoususers", "anonymoususers", translate("Settings"))
+sa = m:section(NamedSection, "anonymoususerssettings", "anonymoususerssettings", translate("Settings"))
 
 o = sa:option(Flag, "enabled", translate("Enabled"))
 o.default = false
