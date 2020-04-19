@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 m = Map("vsftpd", translate("vsftpd - Virtual Users Settings"))
 
-sv = m:section(NamedSection, "virtualuserssettings", "virtualuserssettings", translate("Settings"))
+sv = m:section(NamedSection, "vuser", "vuser", translate("Users Settings"))
 
 o = sv:option(Flag, "enabled", translate("Enabled"))
 o.default = false
@@ -20,7 +20,7 @@ o.default = false
 o = sv:option(Value, "username", translate("Username"), translate("An actual local user to handle virtual users"))
 o.default = "ftp"
 
-s = m:section(TypedSection, "userslist", translate("Users List"))
+s = m:section(TypedSection, "user", translate("Users List"))
 s.template = "cbi/tblsection"
 s.extedit  = luci.dispatcher.build_url("admin/services/vsftpd/item/%s")
 s.addremove = true

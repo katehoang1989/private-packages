@@ -30,7 +30,7 @@ m.uci:foreach("vsftpd", "user",
 		end
 	end)
 
-s = m:section(NamedSection, sid, "settings", translate("User Settings"))
+s = m:section(NamedSection, sid, "settings", translate("Users Settings"))
 s.addremove = false
 
 o = s:option(Value, "username", translate("Username"))

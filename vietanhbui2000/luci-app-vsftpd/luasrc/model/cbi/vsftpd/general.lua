@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 m = Map("vsftpd", translate("vsftpd - General Settings"))
 
-sl = m:section(NamedSection, "listeningsettings", "listeningsettings", translate("Listening Settings"))
+sl = m:section(NamedSection, "listen", "listen", translate("Listening Settings"))
 
 o = sl:option(Flag, "enable4", translate("Enable IPv4"))
 o.rmempty = false
@@ -46,7 +46,7 @@ o.datatype = "uinteger"
 o.default = "51000"
 
 
-sg = m:section(NamedSection, "globalsettings", "globalsettings", translate("Global Settings"))
+sg = m:section(NamedSection, "global", "global", translate("Global Settings"))
 
 o = sg:option(Flag, "write", translate("Enable write"), translate("When disabled, all write request will give permission denied."));
 o.default = true
@@ -73,7 +73,7 @@ o = sg:option(Value, "dirmsgfile", translate("Directory message filename"))
 o.default = ".message"
 
 
-sl = m:section(NamedSection, "localusers", "localusers", translate("Local Users"))
+sl = m:section(NamedSection, "local", "local", translate("Local Users"))
 
 o = sl:option(Flag, "enabled", translate("Enable local user"))
 o.rmempty = false
@@ -82,7 +82,7 @@ o = sl:option(Value, "root", translate("Root directory"), translate("Leave empty
 o.default = ""
 
 
-sc = m:section(NamedSection, "connectionsettings", "connectionsettings", translate("Connection Settings"))
+sc = m:section(NamedSection, "connection", "connection", translate("Connection Settings"))
 
 o = sc:option(Flag, "portmode", translate("Enable PORT mode"))
 o = sc:option(Flag, "pasvmode", translate("Enable PASV mode"))
