@@ -10,9 +10,9 @@ You may obtain a copy of the License at
 	http://www.apache.org/licenses/LICENSE-2.0
 ]]--
 
-m = Map("vsftpd", translate("vsftpd - Anonymous Settings"))
+m = Map("vsftpd", translate("vsftpd - Anonymous Users Settings"))
 
-sa = m:section(NamedSection, "anonymous", "anonymous", translate("Anonymous Settings"))
+sa = m:section(NamedSection, "anonymoususers", "anonymoususers", translate("Settings"))
 
 o = sa:option(Flag, "enabled", translate("Enabled"))
 o.default = false

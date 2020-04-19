@@ -28,12 +28,12 @@ function index()
 		cbi("vsftpd/general"),
 		_("General Settings"), 10).leaf = true
 
-	entry({"admin", "services", "vsftpd", "users"},
-		cbi("vsftpd/users"),
+	entry({"admin", "services", "vsftpd", "virtualusers"},
+		cbi("vsftpd/virtualusers"),
 		_("Virtual Users"), 20).leaf = true
 
-	entry({"admin", "services", "vsftpd", "anonymous"},
-		cbi("vsftpd/anonymous"),
+	entry({"admin", "services", "vsftpd", "anonymoususers"},
+		cbi("vsftpd/anonymoususers"),
 		_("Anonymous Users"), 30).leaf = true
 
 	entry({"admin", "services", "vsftpd", "log"},
