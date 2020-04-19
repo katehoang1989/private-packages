@@ -19,27 +19,27 @@ function index()
 		return
 	end
 
-	entry({"admin", "nas"}, firstchild(), "NAS", 44).dependent = false
-	entry({"admin", "nas", "vsftpd"},
-		alias("admin", "nas", "vsftpd", "general"),
+	entry({"admin", "services"}, firstchild(), "Services", 44).dependent = false
+	entry({"admin", "services", "vsftpd"},
+		alias("admin", "services", "vsftpd", "general"),
 		_("vsftpd"))
 
-	entry({"admin", "nas", "vsftpd", "general"},
+	entry({"admin", "services", "vsftpd", "general"},
 		cbi("vsftpd/general"),
 		_("General Settings"), 10).leaf = true
 
-	entry({"admin", "nas", "vsftpd", "users"},
+	entry({"admin", "services", "vsftpd", "users"},
 		cbi("vsftpd/users"),
 		_("Virtual Users"), 20).leaf = true
 
-	entry({"admin", "nas", "vsftpd", "anonymous"},
+	entry({"admin", "services", "vsftpd", "anonymous"},
 		cbi("vsftpd/anonymous"),
 		_("Anonymous Users"), 30).leaf = true
 
-	entry({"admin", "nas", "vsftpd", "log"},
+	entry({"admin", "services", "vsftpd", "log"},
 		cbi("vsftpd/log"),
 		_("Log Settings"), 40).leaf = true
 
-	entry({"admin", "nas", "vsftpd", "item"},
+	entry({"admin", "services", "vsftpd", "item"},
 		cbi("vsftpd/item"), nil).leaf = true
 end
