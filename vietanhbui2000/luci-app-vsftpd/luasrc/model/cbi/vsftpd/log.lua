@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 m = Map("vsftpd", translate("vsftpd - Log Settings"))
 
-sl = m:section(NamedSection, "log", "log", translate("Log Settings"))
+sl = m:section(NamedSection, "logsettings", "logsettings", translate("Log Settings"))
 
 o = sl:option(Flag, "syslog", translate("Enable syslog"))
 o.default = false
