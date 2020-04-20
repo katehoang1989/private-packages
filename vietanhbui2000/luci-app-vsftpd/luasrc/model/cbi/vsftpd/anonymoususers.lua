@@ -17,7 +17,7 @@ sa = m:section(NamedSection, "anonymous", "anonymous", translate("Users Settings
 o = sa:option(Flag, "enabled", translate("Enabled"))
 o.default = false
 
-o = sa:option(Value, "username", translate("Username"), translate("An actual local user to handle anonymous user"))
+o = sa:option(Value, "username", translate("Username"), translate("An actual local user to handle anonymous users"))
 o.default = "ftp"
 
 o = sa:option(Value, "root", translate("Home directory"))
