@@ -17,7 +17,7 @@ String.prototype.replaceAll = function(search, replacement) {
     }
   };
   function removePath(filename, isdir) {
-    var c = confirm('Delete ' + filename + ' ?');
+    var c = confirm('Delete ' + filename + '?');
     if (c) {
       iwxhr.get('/cgi-bin/luci/admin/services/filebrowser_delete',
         {

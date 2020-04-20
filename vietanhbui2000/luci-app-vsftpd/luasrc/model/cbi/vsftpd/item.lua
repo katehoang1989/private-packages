@@ -13,7 +13,7 @@ You may obtain a copy of the License at
 local sid = arg[1]
 local utl = require "luci.util"
 
-m = Map("vsftpd", translate("vsftpd - Virtual Users &lt;new&gt;"))
+m = Map("vsftpd", translate("vsftpd - Virtual User &lt;new&gt;"))
 
 m.redirect = luci.dispatcher.build_url("admin/services/vsftpd/virtualusers")
 
@@ -25,12 +25,12 @@ end
 m.uci:foreach("vsftpd", "user",
 	function(s)
 		if s['.name'] == sid and s.username then
-			m.title = translatef("vsftpd - Virtual Users %q", s.username)
+			m.title = translatef("vsftpd - Virtual User %q", s.username)
 			return false
 		end
 	end)
 
-s = m:section(NamedSection, sid, "settings", translate("Users Settings"))
+s = m:section(NamedSection, sid, "settings", translate("User Settings"))
 s.addremove = false
 
 o = s:option(Value, "username", translate("Username"))

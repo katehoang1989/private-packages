@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=vsftpd-alt
-PKG_VERSION:=3.0.3
+PKG_VERSION:=1.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=vsftpd-$(PKG_VERSION).tar.gz
