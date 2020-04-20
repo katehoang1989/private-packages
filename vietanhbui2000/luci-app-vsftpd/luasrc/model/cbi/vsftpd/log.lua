@@ -14,7 +14,7 @@ m = Map("vsftpd", translate("vsftpd - Log Settings"))
 
 sl = m:section(NamedSection, "log", "log", translate("Log Settings"))
 
-o = sl:option(Flag, "syslog", translate("Enable syslog"))
+o = sl:option(Flag, "syslog", translate("Enable sys log"))
 o.default = false
 
 o = sl:option(Flag, "xreflog", translate("Enable log file"))
