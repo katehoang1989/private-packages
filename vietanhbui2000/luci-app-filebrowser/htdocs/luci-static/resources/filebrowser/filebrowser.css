@@ -1,0 +1,68 @@
+.filebrowser-container {
+    margin-top: 1rem;
+}
+.filebrowser-container .cbi-button {
+    height: 1.8rem;
+}
+.filebrowser-container .cbi-input-text {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.filebrowser-container .panel-title {
+    padding-bottom: 0;
+    width: 50%;
+    border-bottom: none;
+}
+.filebrowser-container .panel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.filebrowser-container .upload-container {
+    display: none;
+    margin: 1rem 0;
+}
+.filebrowser-container .upload-file {
+    margin-right: 2rem;
+}
+.filebrowser-container .cbi-value-field {
+    text-align: left;
+}
+.filebrowser-container .parent-icon strong {
+    margin-left: 1rem;
+}
+.filebrowser-container td[class$="-icon"] {
+    cursor: pointer;
+}
+.filebrowser-container .file-icon, .filebrowser-container .folder-icon, .filebrowser-container .link-icon {
+    position: relative;
+}
+.filebrowser-container .file-icon:before, .filebrowser-container .folder-icon:before, .filebrowser-container .link-icon:before {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    content: '';
+    background-size: contain;
+    margin: 0 0.5rem 0 1rem;
+    vertical-align: middle;
+}
+.filebrowser-container .file-icon:before {
+    background-image: url(file-icon.png);
+}
+.filebrowser-container .folder-icon:before {
+    background-image: url(folder-icon.png);
+}
+.filebrowser-container .link-icon:before {
+    background-image: url(link-icon.png);
+}
+@media screen and (max-width: 480px) {
+    .filebrowser-container .upload-file {
+        width: 14.6rem;
+    }
+    .filebrowser-container .cbi-value-owner,
+    .filebrowser-container .cbi-value-perm {
+        display: none;
+    }
+}
