@@ -169,7 +169,7 @@ input,
 
 select:not([multiple="multiple"]):focus,
 input:focus {
-    border-color: #94a494;
+    border-color: #1782dd;
 }
 
 select[multiple="multiple"] {
@@ -177,7 +177,7 @@ select[multiple="multiple"] {
 }
 
 code {
-    color: #94a494;
+    color: #1782dd;
 }
 
 abbr {
@@ -320,7 +320,7 @@ header > .container > .brand {
     line-height:60px;
     color: white;
     cursor: default;
-    background: #94a494;
+    background: #1782dd;
     display:block;
     width:17rem;
     padding-right: 10px;
@@ -350,7 +350,7 @@ header > .container > a[class="brand"]:after {
 }
 
 .success {
-    background-color: #90EE90 !important;
+    background-color: #ffa826 !important;
     color: black;
 }
 
@@ -758,7 +758,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
     width: 100% !important;
     border-color:#ccc !important;
     height:20px !important;
-    color:#bcdeb8 !important;
+    color:#30abf2 !important;
 }
 
 #cpu_free > div > div,
@@ -771,7 +771,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #bcdeb8 !important;
+    background-color: #30abf2 !important;
 }
 
 /* fix multiple table */
@@ -802,7 +802,7 @@ td > table > tbody > tr > td,
     -webkit-appearance: none;
     text-transform: uppercase;
     color: #fff;
-    background-color: #337ab7;
+    background-color: #7989f2;
     transition: all 0.2s ease-in-out;
     display: inline-block;
     padding: 0.2rem 1rem;
@@ -858,7 +858,7 @@ form.inline + form.inline,
 .cbi-button-reset,
 .cbi-input-remove {
     color: #fff !important;
-    background-color: #617486 !important;
+    background-color: #969ba0 !important;
 }
 
 .cbi-input-find,
@@ -869,7 +869,7 @@ form.inline + form.inline,
 .cbi-input-reload,
 .cbi-button-reload {
     color: #fff !important;
-    background-color: #337ab7 !important;
+    background-color: #7989f2 !important;
     border-color: #2e6da4 !important;
 }
 
@@ -877,13 +877,13 @@ form.inline + form.inline,
 .cbi-button-apply,
 .cbi-button-edit {
     color: #fff !important;
-    background-color: #cc181e;
+    background-color: #41bf30;
 }
 
 .cbi-input-reset,
 .cbi-button-remove {
     color: #fff !important;
-    background: #617486;
+    background: #969ba0;
 }
 
 .a-to-btn {
