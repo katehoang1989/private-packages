@@ -12,7 +12,7 @@ start() {
 
 stop() {
 	if [ -n "`pidof ttyd`" ]; then
-		logger -t TTYD 'Shutting down ttyd service'
+		logger -t TTYD 'Stopping ttyd service'
 		service_stop /usr/bin/ttyd
 	fi
 	return 0
