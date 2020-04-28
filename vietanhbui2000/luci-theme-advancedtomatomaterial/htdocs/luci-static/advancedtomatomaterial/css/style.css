@@ -758,7 +758,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
     width: 100% !important;
     border-color:#ccc !important;
     height:20px !important;
-    color:#62a8ea !important;
+    color:#69baf2 !important;
 }
 
 #cpu_free > div > div,
@@ -771,7 +771,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #62a8ea !important;
+    background-color: #69baf2 !important;
 }
 
 /* fix multiple table */
@@ -1337,7 +1337,7 @@ td > .ifacebadge,
 .uci-change-list del,
 .uci-change-legend-label del {
     text-decoration: none;
-    border: 1px solid #62a8ea;
+    border: 1px solid #69baf2;
     background-color: #FFCCCC;
     display: block;
     font-style: normal;
