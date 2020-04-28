@@ -920,7 +920,7 @@ form.inline + form.inline,
 }
 
 .tabs > li:hover {
-    border-bottom: 0.18751rem solid #C9C9C9;
+    border-bottom: 0.18751rem solid #969ba0;
 }
 
 .cbi-tabmenu {
@@ -1337,7 +1337,7 @@ td > .ifacebadge,
 .uci-change-list del,
 .uci-change-legend-label del {
     text-decoration: none;
-    border: 1px solid #FF0000;
+    border: 1px solid #62a8ea;
     background-color: #FFCCCC;
     display: block;
     font-style: normal;
