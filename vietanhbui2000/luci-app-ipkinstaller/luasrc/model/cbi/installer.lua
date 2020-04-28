@@ -5,7 +5,7 @@ ful = SimpleForm("upload", translate("Upload"), nil)
 ful.reset = false
 ful.submit = false
 
-sul = ful:section(SimpleSection, "", translate("Upload file to '/tmp/'"))
+sul = ful:section(SimpleSection, "", translate("Upload file to path '/tmp/'"))
 fu = sul:option(FileUpload, "")
 fu.template = "cbi/installer_upload"
 um = sul:option(DummyValue, "", nil)
@@ -31,7 +31,7 @@ function Download()
 		fd = nixio.open(sPath, "r")
 	end
 	if not fd then
-		dm.value = translate("Couldn't download: ") .. sPath
+		dm.value = translate("File download failed: ") .. sPath
 		return
 	end
 	dm.value = nil
@@ -80,7 +80,7 @@ if luci.http.formvalue("upload") then
 
 	local f = luci.http.formvalue("ulfile")
 	if #f <= 0 then
-		um.value = translate("File upload not specify.")
+		um.value = translate("File upload not specified.")
 	end
 elseif luci.http.formvalue("download") then
 	Download()
