@@ -877,7 +877,7 @@ form.inline + form.inline,
 .cbi-button-apply,
 .cbi-button-edit {
     color: #fff !important;
-    background-color: #ed5153;
+    background-color: #51adee;
 }
 
 .cbi-input-reset,
