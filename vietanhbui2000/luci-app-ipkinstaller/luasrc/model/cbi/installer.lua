@@ -5,7 +5,7 @@ ful = SimpleForm("upload", translate("Upload"), nil)
 ful.reset = false
 ful.submit = false
 
-sul = ful:section(SimpleSection, "", translate("Upload file to path '/tmp/'"))
+sul = ful:section(SimpleSection, "", translate("Upload file to router"))
 fu = sul:option(FileUpload, "")
 fu.template = "cbi/installer_upload"
 um = sul:option(DummyValue, "", nil)
@@ -14,7 +14,7 @@ um.template = "cbi/installer_dvalue"
 fdl = SimpleForm("download", translate("Download"), nil)
 fdl.reset = false
 fdl.submit = false
-sdl = fdl:section(SimpleSection, "", translate("Download file from path"))
+sdl = fdl:section(SimpleSection, "", translate("Download file from router"))
 fd = sdl:option(FileUpload, "")
 fd.template = "cbi/installer_download"
 dm = sdl:option(DummyValue, "", nil)
@@ -31,7 +31,7 @@ function Download()
 		fd = nixio.open(sPath, "r")
 	end
 	if not fd then
-		dm.value = translate("File download failed: ") .. sPath
+		dm.value = translate("File download failed, invalid path: ") .. sPath
 		return
 	end
 	dm.value = nil
@@ -60,7 +60,7 @@ http.setfilehandler(
 			if	meta and chunk then fd = nixio.open(dir .. meta.file, "w") end
 
 			if not fd then
-				um.value = translate("File upload failed.")
+				um.value = translate("File upload failed")
 				return
 			end
 		end
@@ -70,7 +70,7 @@ http.setfilehandler(
 		if eof and fd then
 			fd:close()
 			fd = nil
-			um.value = translate("File saved to") .. ' "/tmp/' .. meta.file .. '"'
+			um.value = translate("File upload succeed, saved to path:") .. ' "/tmp/' .. meta.file .. '"'
 		end
 	end
 )
@@ -80,7 +80,7 @@ if luci.http.formvalue("upload") then
 
 	local f = luci.http.formvalue("ulfile")
 	if #f <= 0 then
-		um.value = translate("File upload not specified.")
+		um.value = translate("File upload failed, invalid file")
 	end
 elseif luci.http.formvalue("download") then
 	Download()
@@ -110,7 +110,7 @@ for i, f in ipairs(fs.glob("/tmp/*")) do
 	end
 end
 
-form = SimpleForm("filelist", translate("File list"), nil)
+form = SimpleForm("filelist", translate("File List"), nil)
 form.reset = false
 form.submit = false
 
