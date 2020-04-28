@@ -5,7 +5,7 @@ ful = SimpleForm("upload", translate("Upload"), nil)
 ful.reset = false
 ful.submit = false
 
-sul = ful:section(SimpleSection, "", translate("Upload file to '/tmp/upload/'"))
+sul = ful:section(SimpleSection, "", translate("Upload file to '/tmp/'"))
 fu = sul:option(FileUpload, "")
 fu.template = "cbi/other_upload"
 um = sul:option(DummyValue, "", nil)
@@ -14,7 +14,7 @@ um.template = "cbi/other_dvalue"
 fdl = SimpleForm("download", translate("Download"), nil)
 fdl.reset = false
 fdl.submit = false
-sdl = fdl:section(SimpleSection, "", translate("Download file from '/tmp/upload/'"))
+sdl = fdl:section(SimpleSection, "", translate("Download file from path"))
 fd = sdl:option(FileUpload, "")
 fd.template = "cbi/other_download"
 dm = sdl:option(DummyValue, "", nil)
@@ -50,7 +50,7 @@ function Download()
 end
 
 local dir, fd
-dir = "/tmp/upload/"
+dir = "/tmp/"
 nixio.fs.mkdir(dir)
 http.setfilehandler(
 	function(meta, chunk, eof)
@@ -70,7 +70,7 @@ http.setfilehandler(
 		if eof and fd then
 			fd:close()
 			fd = nil
-			um.value = translate("File saved to") .. ' "/tmp/upload/' .. meta.file .. '"'
+			um.value = translate("File saved to") .. ' "/tmp/' .. meta.file .. '"'
 		end
 	end
 )
@@ -97,7 +97,7 @@ local function getSizeStr(size)
 end
 
 local inits, attr = {}
-for i, f in ipairs(fs.glob("/tmp/upload/*")) do
+for i, f in ipairs(fs.glob("/tmp/*")) do
 	attr = fs.stat(f)
 	if attr then
 		inits[i] = {}
@@ -110,7 +110,7 @@ for i, f in ipairs(fs.glob("/tmp/upload/*")) do
 	end
 end
 
-form = SimpleForm("filelist", translate("File upload list"), nil)
+form = SimpleForm("filelist", translate("File list"), nil)
 form.reset = false
 form.submit = false
 
@@ -126,7 +126,7 @@ btnrm.render = function(self, section, scope)
 end
 
 btnrm.write = function(self, section)
-	local v = luci.fs.unlink("/tmp/upload/" .. luci.fs.basename(inits[section].name))
+	local v = luci.fs.unlink("/tmp/" .. luci.fs.basename(inits[section].name))
 	if v then table.remove(inits, section) end
 	return v
 end
@@ -151,7 +151,7 @@ btnis.render = function(self, section, scope)
 end
 
 btnis.write = function(self, section)
-	local r = luci.sys.exec(string.format('opkg --force-depends install "/tmp/upload/%s"', inits[section].name))
+	local r = luci.sys.exec(string.format('opkg --force-depends install "/tmp/%s"', inits[section].name))
 	form.description = string.format('<span style="color: red">%s</span>', r)
 end
 
