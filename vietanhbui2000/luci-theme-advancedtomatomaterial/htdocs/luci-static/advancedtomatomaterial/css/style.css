@@ -125,7 +125,7 @@ html, body {
     font-family: Roboto, 'Microsoft Yahei' !important;
     font-size:10pt;
     line-height: 150%;
-    color:#76838f;
+    color:#6a6a6a;
     /*min-width: 960px;*/
 }
 
@@ -134,7 +134,7 @@ body div {
 }
 
 a {
-    color: #76838f;
+    color: #6a6a6a;
     text-decoration: none;
 }
 
@@ -151,7 +151,7 @@ select {
 select,
 input,
 .cbi-dropdown {
-    color: #76838f;
+    color: #6a6a6a;
     padding: 6px 10px;
     margin: 0;
     height: 34px;
@@ -273,7 +273,7 @@ footer > a {
     top: 4rem;
     width: 17rem;
     bottom: 0rem;
-    background-color: #222222;
+    background-color: #2c3037;
 
     overflow-x: auto;
     position: fixed;
@@ -704,7 +704,7 @@ fieldset > fieldset {
     width: 100%;
     display: block;
     line-height: 1;
-    color: #76838f;
+    color: #6a6a6a;
     font-size: 10pt;
     padding-bottom: 10px;
 }
@@ -906,7 +906,7 @@ form.inline + form.inline,
 .cbi-tabmenu > li > a,
 .tabs > li > a {
     text-decoration: none;
-    color: #76838f;
+    color: #6a6a6a;
     padding: 0.9rem 1.5rem;
 }
 
@@ -1287,7 +1287,7 @@ td > .ifacebadge,
 /*textarea*/
 
 .cbi-input-textarea {
-    color: #76838f;
+    color: #6a6a6a;
     padding: 6px 10px;
     margin: 0;
     line-height: normal;
@@ -1424,7 +1424,7 @@ td > .ifacebadge,
 }
 
 .ifacebox strong {
-    color:#76838f;
+    color:#6a6a6a;
 }
 
 .cbi-image-button {
@@ -1523,7 +1523,7 @@ small {
     white-space: pre-wrap;
     word-wrap: break-word;
     font-size: 10pt;
-    color: #76838f;
+    color: #6a6a6a;
 }
 
 input[name="ping"],
@@ -1563,7 +1563,7 @@ header > .container > .pull-right > * {
 
 .showSide:before {
     display:none;
-    color:#76838f;
+    color:#6a6a6a;
     content: "\e029";
     font-family: "advancedtomato" !important;
     font-weight: normal !important;
@@ -1699,7 +1699,7 @@ header > .container > .pull-right > * {
 .node-system-packages > .main table tr td:nth-last-child(1) {
     white-space: normal;
     font-size: small;
-    color: #76838f;
+    color: #6a6a6a;
 }
 
 .node-system-packages > .main .cbi-tabmenu > li > a, .tabs > li > a {
