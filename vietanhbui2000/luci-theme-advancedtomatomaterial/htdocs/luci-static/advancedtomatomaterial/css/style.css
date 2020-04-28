@@ -802,7 +802,7 @@ td > table > tbody > tr > td,
     -webkit-appearance: none;
     text-transform: uppercase;
     color: #fff;
-    background-color: #ed5153;
+    background-color: #ee5153;
     transition: all 0.2s ease-in-out;
     display: inline-block;
     padding: 0.2rem 1rem;
@@ -869,7 +869,7 @@ form.inline + form.inline,
 .cbi-input-reload,
 .cbi-button-reload {
     color: #fff !important;
-    background-color: #ed5153 !important;
+    background-color: #ee5153 !important;
     border-color: #2e6da4 !important;
 }
 
