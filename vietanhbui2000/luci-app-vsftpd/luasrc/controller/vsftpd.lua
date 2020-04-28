@@ -19,7 +19,7 @@ function index()
 		return
 	end
 
-	entry({"admin", "services"}, firstchild(), "Services", 44).dependent = false
+	entry({"admin", "services"}, firstchild(), "Services", 10).dependent = false
 	entry({"admin", "services", "vsftpd"},
 		alias("admin", "services", "vsftpd", "general"),
 		_("vsftpd"))

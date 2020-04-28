@@ -8,5 +8,5 @@ Modify: ayongwifi@126.com  www.openwrtdl.com
 module("luci.controller.ipkinstaller", package.seeall)
 
 function index()
-	entry({"admin", "services", "ipkinstaller"}, form("installer"), _("IPK Installer"),89)
+	entry({"admin", "services", "ipkinstaller"}, form("installer"), _("IPK Installer"), 96)
 end
