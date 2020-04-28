@@ -423,7 +423,7 @@ header > .container > a[class="brand"]:after {
 }
 
 .main > .main-left > .nav > li a {
-    color: #969ba0;
+    color: #969ca0;
     display: block;
 }
 
@@ -598,7 +598,7 @@ header > .container > a[class="brand"]:after {
 .main > .main-left > .nav > .slide > .slide-menu > li > a {
     position: relative;
     display: block;
-    color: #969ba0;
+    color: #969ca0;
     text-shadow: 0px 1px 3px #222;
     vertical-align: middle;
 }
@@ -736,12 +736,12 @@ table > tbody > tr > td, table > tbody > tr > th, table > tfoot > tr > td, table
 
 fieldset > table > tbody > tr:nth-of-type(odd),
 fieldset > .table > .tbody > .tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
+    background-color: #fbfdfd;
 }
 
 fieldset > table > tr:nth-of-type(odd),
 fieldset > .table > .tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
+    background-color: #fbfdfd;
 }
 
 /* fix progress bar */
@@ -920,7 +920,7 @@ form.inline + form.inline,
 }
 
 .tabs > li:hover {
-    border-bottom: 0.18751rem solid #969ba0;
+    border-bottom: 0.18751rem solid #969ca0;
 }
 
 .cbi-tabmenu {
@@ -951,7 +951,7 @@ form.inline + form.inline,
     clear:both;
 }
 .cbi-tabcontainer > .cbi-value:nth-of-type(2n) {
-    background-color: #f9f9f9;
+    background-color: #fbfdfd;
 }
 
 .cbi-value-field,
@@ -1403,7 +1403,7 @@ td > .ifacebadge,
 
 .ifacebox {
     border: 1px solid #e4eaec;
-    background-color: #f9f9f9;
+    background-color: #fbfdfd;
     display: inline-flex;
     flex-direction: column;
     line-height: 1.2em;
@@ -1549,7 +1549,7 @@ header > .container > .pull-right > * {
     color: #ffffff !important;
     text-transform: uppercase;
     white-space: nowrap;
-    background-color: #969ba0;
+    background-color: #969ca0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
