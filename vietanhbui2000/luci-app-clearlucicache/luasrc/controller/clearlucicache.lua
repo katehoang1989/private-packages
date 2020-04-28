@@ -1,7 +1,7 @@
 module("luci.controller.clearlucicache",package.seeall)
 
 function index()
-	entry({"admin","services","clearlucicache"}, call("clearlucicache"), _("Clear LuCI Cache"), 98)
+	entry({"admin","services","clearlucicache"}, call("clearlucicache"), _("Clear LuCI Cache"), 99)
 end
 function clearlucicache()
 	luci.sys.call("rm /tmp/luci-modulecache/* /tmp/luci-indexcache")
