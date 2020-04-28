@@ -5,11 +5,11 @@ function index()
 		return
 	end
 	local page
-	page = entry({"admin", "network", "flowoffload"}, cbi("flowoffload"), _("Flow Offload"), 101)
+	page = entry({"admin", "services", "flowoffload"}, cbi("flowoffload"), _("Flow Offload"), 1)
 	page.i18n = "flowoffload"
 	page.dependent = true
 	
-	entry({"admin", "network", "flowoffload", "status"}, call("action_status"))
+	entry({"admin", "services", "flowoffload", "status"}, call("action_status"))
 end
 
 local function is_running()
@@ -37,5 +37,3 @@ function action_status()
 		dns_state = is_dns()
 	})
 end
-
-
