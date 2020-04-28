@@ -16,12 +16,12 @@ local function is_running()
 	return luci.sys.call("[ `cat /sys/module/xt_FLOWOFFLOAD/refcnt 2>/dev/null` -gt 0 ] 2>/dev/null") == 0
 end
 
-local function is_bbr()
-	return luci.sys.call("[ `cat /proc/sys/net/ipv4/tcp_congestion_control 2>/dev/null` = bbr ] 2>/dev/null") == 0
-end
-
 local function is_fullcone()
 	return luci.sys.call("[ `cat /sys/module/xt_FULLCONENAT/refcnt 2>/dev/null` -gt 0 ] 2>/dev/null") == 0
+end
+
+local function is_bbr()
+	return luci.sys.call("[ `cat /proc/sys/net/ipv4/tcp_congestion_control 2>/dev/null` = bbr ] 2>/dev/null") == 0
 end
 
 local function is_dns()
@@ -32,8 +32,8 @@ function action_status()
 	luci.http.prepare_content("application/json")
 	luci.http.write_json({
 		run_state = is_running(),
-		down_state = is_bbr(),
 		up_state = is_fullcone(),
+		down_state = is_bbr(),
 		dns_state = is_dns()
 	})
 end
