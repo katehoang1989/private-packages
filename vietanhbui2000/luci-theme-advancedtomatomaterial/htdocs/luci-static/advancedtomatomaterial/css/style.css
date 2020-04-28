@@ -802,7 +802,7 @@ td > table > tbody > tr > td,
     -webkit-appearance: none;
     text-transform: uppercase;
     color: #fff;
-    background-color: #337ab7;
+    background-color: #51adee;
     transition: all 0.2s ease-in-out;
     display: inline-block;
     padding: 0.2rem 1rem;
@@ -858,7 +858,7 @@ form.inline + form.inline,
 .cbi-button-reset,
 .cbi-input-remove {
     color: #fff !important;
-    background-color: #617486 !important;
+    background-color: #536270 !important;
 }
 
 .cbi-input-find,
@@ -869,7 +869,7 @@ form.inline + form.inline,
 .cbi-input-reload,
 .cbi-button-reload {
     color: #fff !important;
-    background-color: #337ab7 !important;
+    background-color: #51adee !important;
     border-color: #2e6da4 !important;
 }
 
@@ -877,13 +877,13 @@ form.inline + form.inline,
 .cbi-button-apply,
 .cbi-button-edit {
     color: #fff !important;
-    background-color: #cc181e;
+    background-color: #ed5153;
 }
 
 .cbi-input-reset,
 .cbi-button-remove {
     color: #fff !important;
-    background: #617486;
+    background: #536270;
 }
 
 .a-to-btn {
