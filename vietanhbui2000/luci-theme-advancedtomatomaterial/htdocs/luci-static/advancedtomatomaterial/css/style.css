@@ -125,7 +125,7 @@ html, body {
     font-family: Roboto, 'Microsoft Yahei' !important;
     font-size:10pt;
     line-height: 150%;
-    color:#6a6a6a;
+    color:#76838f;
     /*min-width: 960px;*/
 }
 
@@ -134,7 +134,7 @@ body div {
 }
 
 a {
-    color: #6a6a6a;
+    color: #76838f;
     text-decoration: none;
 }
 
@@ -151,7 +151,7 @@ select {
 select,
 input,
 .cbi-dropdown {
-    color: #6a6a6a;
+    color: #76838f;
     padding: 6px 10px;
     margin: 0;
     height: 34px;
@@ -169,7 +169,7 @@ input,
 
 select:not([multiple="multiple"]):focus,
 input:focus {
-    border-color: #3498db;
+    border-color: #0099CC;
 }
 
 select[multiple="multiple"] {
@@ -177,7 +177,7 @@ select[multiple="multiple"] {
 }
 
 code {
-    color: #3498db;
+    color: #0099CC;
 }
 
 abbr {
@@ -273,7 +273,7 @@ footer > a {
     top: 4rem;
     width: 17rem;
     bottom: 0rem;
-    background-color: #2c3037;
+    background-color: #222222;
 
     overflow-x: auto;
     position: fixed;
@@ -320,7 +320,7 @@ header > .container > .brand {
     line-height:60px;
     color: white;
     cursor: default;
-    background: #3498db;
+    background: #0099CC;
     display:block;
     width:17rem;
     padding-right: 10px;
@@ -350,7 +350,7 @@ header > .container > a[class="brand"]:after {
 }
 
 .success {
-    background-color: #27ae60 !important;
+    background-color: #90EE90 !important;
     color: black;
 }
 
@@ -423,7 +423,7 @@ header > .container > a[class="brand"]:after {
 }
 
 .main > .main-left > .nav > li a {
-    color: #969ca0;
+    color: #969ba0;
     display: block;
 }
 
@@ -598,7 +598,7 @@ header > .container > a[class="brand"]:after {
 .main > .main-left > .nav > .slide > .slide-menu > li > a {
     position: relative;
     display: block;
-    color: #969ca0;
+    color: #969ba0;
     text-shadow: 0px 1px 3px #222;
     vertical-align: middle;
 }
@@ -704,7 +704,7 @@ fieldset > fieldset {
     width: 100%;
     display: block;
     line-height: 1;
-    color: #6a6a6a;
+    color: #76838f;
     font-size: 10pt;
     padding-bottom: 10px;
 }
@@ -736,17 +736,15 @@ table > tbody > tr > td, table > tbody > tr > th, table > tfoot > tr > td, table
 
 fieldset > table > tbody > tr:nth-of-type(odd),
 fieldset > .table > .tbody > .tr:nth-of-type(odd) {
-    background-color: #fbfdfd;
+    background-color: #f9f9f9;
 }
 
 fieldset > table > tr:nth-of-type(odd),
 fieldset > .table > .tr:nth-of-type(odd) {
-    background-color: #fbfdfd;
+    background-color: #f9f9f9;
 }
 
 /* fix progress bar */
-
-#cpu_free > div,
 #swaptotal > div,
 #swapfree > div,
 #swapcache > div,
@@ -758,10 +756,9 @@ fieldset > .table > .tr:nth-of-type(odd) {
     width: 100% !important;
     border-color:#ccc !important;
     height:20px !important;
-    color:#69baf2 !important;
+    color:#76838f !important;
 }
 
-#cpu_free > div > div,
 #swaptotal > div > div,
 #swapfree > div > div,
 #swapcache > div > div,
@@ -771,7 +768,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #69baf2 !important;
+    background-color: #e4eaec !important;
 }
 
 /* fix multiple table */
@@ -802,7 +799,7 @@ td > table > tbody > tr > td,
     -webkit-appearance: none;
     text-transform: uppercase;
     color: #fff;
-    background-color: #ee5153;
+    background-color: #337ab7;
     transition: all 0.2s ease-in-out;
     display: inline-block;
     padding: 0.2rem 1rem;
@@ -858,7 +855,7 @@ form.inline + form.inline,
 .cbi-button-reset,
 .cbi-input-remove {
     color: #fff !important;
-    background-color: #536270 !important;
+    background-color: #617486 !important;
 }
 
 .cbi-input-find,
@@ -869,7 +866,7 @@ form.inline + form.inline,
 .cbi-input-reload,
 .cbi-button-reload {
     color: #fff !important;
-    background-color: #ee5153 !important;
+    background-color: #337ab7 !important;
     border-color: #2e6da4 !important;
 }
 
@@ -877,13 +874,13 @@ form.inline + form.inline,
 .cbi-button-apply,
 .cbi-button-edit {
     color: #fff !important;
-    background-color: #51aded;
+    background-color: #cc181e;
 }
 
 .cbi-input-reset,
 .cbi-button-remove {
     color: #fff !important;
-    background: #536270;
+    background: #617486;
 }
 
 .a-to-btn {
@@ -906,7 +903,7 @@ form.inline + form.inline,
 .cbi-tabmenu > li > a,
 .tabs > li > a {
     text-decoration: none;
-    color: #6a6a6a;
+    color: #76838f;
     padding: 0.9rem 1.5rem;
 }
 
@@ -920,7 +917,7 @@ form.inline + form.inline,
 }
 
 .tabs > li:hover {
-    border-bottom: 0.18751rem solid #969ca0;
+    border-bottom: 0.18751rem solid #C9C9C9;
 }
 
 .cbi-tabmenu {
@@ -951,7 +948,7 @@ form.inline + form.inline,
     clear:both;
 }
 .cbi-tabcontainer > .cbi-value:nth-of-type(2n) {
-    background-color: #fbfdfd;
+    background-color: #f9f9f9;
 }
 
 .cbi-value-field,
@@ -1287,7 +1284,7 @@ td > .ifacebadge,
 /*textarea*/
 
 .cbi-input-textarea {
-    color: #6a6a6a;
+    color: #76838f;
     padding: 6px 10px;
     margin: 0;
     line-height: normal;
@@ -1337,7 +1334,7 @@ td > .ifacebadge,
 .uci-change-list del,
 .uci-change-legend-label del {
     text-decoration: none;
-    border: 1px solid #69baf2;
+    border: 1px solid #FF0000;
     background-color: #FFCCCC;
     display: block;
     font-style: normal;
@@ -1403,7 +1400,7 @@ td > .ifacebadge,
 
 .ifacebox {
     border: 1px solid #e4eaec;
-    background-color: #fbfdfd;
+    background-color: #f9f9f9;
     display: inline-flex;
     flex-direction: column;
     line-height: 1.2em;
@@ -1424,7 +1421,7 @@ td > .ifacebadge,
 }
 
 .ifacebox strong {
-    color:#6a6a6a;
+    color:#76838f;
 }
 
 .cbi-image-button {
@@ -1523,7 +1520,7 @@ small {
     white-space: pre-wrap;
     word-wrap: break-word;
     font-size: 10pt;
-    color: #6a6a6a;
+    color: #76838f;
 }
 
 input[name="ping"],
@@ -1549,7 +1546,7 @@ header > .container > .pull-right > * {
     color: #ffffff !important;
     text-transform: uppercase;
     white-space: nowrap;
-    background-color: #969ca0;
+    background-color: #bfbfbf;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -1563,7 +1560,7 @@ header > .container > .pull-right > * {
 
 .showSide:before {
     display:none;
-    color:#6a6a6a;
+    color:#76838f;
     content: "\e029";
     font-family: "advancedtomato" !important;
     font-weight: normal !important;
@@ -1699,7 +1696,7 @@ header > .container > .pull-right > * {
 .node-system-packages > .main table tr td:nth-last-child(1) {
     white-space: normal;
     font-size: small;
-    color: #6a6a6a;
+    color: #76838f;
 }
 
 .node-system-packages > .main .cbi-tabmenu > li > a, .tabs > li > a {
