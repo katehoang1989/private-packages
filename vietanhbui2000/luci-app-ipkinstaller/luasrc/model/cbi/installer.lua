@@ -31,7 +31,7 @@ function Download()
 		fd = nixio.open(sPath, "r")
 	end
 	if not fd then
-		dm.value = translate("Couldn't open: ") .. sPath
+		dm.value = translate("Couldn't download: ") .. sPath
 		return
 	end
 	dm.value = nil
