@@ -350,7 +350,7 @@ header > .container > a[class="brand"]:after {
 }
 
 .success {
-    background-color: #90EE90 !important;
+    background-color: #536270 !important;
     color: black;
 }
 
@@ -758,7 +758,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
     width: 100% !important;
     border-color:#ccc !important;
     height:20px !important;
-    color:#bcdeb8 !important;
+    color:#62a8ea !important;
 }
 
 #cpu_free > div > div,
@@ -771,7 +771,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #bcdeb8 !important;
+    background-color: #62a8ea !important;
 }
 
 /* fix multiple table */
