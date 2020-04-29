@@ -924,7 +924,7 @@ form.inline + form.inline,
     border-top: 1px solid #e4eaec;
     border-left: 1px solid #e4eaec;
     border-right: 1px solid #e4eaec;
-    background-color: #e4eaec;
+    background-color: #e7ecee;
 }
 
 .cbi-tabmenu > li:hover {
@@ -1665,7 +1665,7 @@ header > .container > .pull-right > * {
 }
 
 .cbi-map fieldset ul li {
-    background:#e4eaec;
+    background:#e7ecee;
     margin-right:0 !important;
 }
 /* fix system reboot */
