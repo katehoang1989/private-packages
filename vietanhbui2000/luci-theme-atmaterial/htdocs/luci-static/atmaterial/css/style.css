@@ -1665,7 +1665,6 @@ header > .container > .pull-right > * {
 }
 
 .cbi-map fieldset ul li {
-    background:#e7ecee;
     margin-right:0 !important;
 }
 /* fix system reboot */
