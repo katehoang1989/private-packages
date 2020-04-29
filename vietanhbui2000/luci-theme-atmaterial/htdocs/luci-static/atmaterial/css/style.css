@@ -867,7 +867,6 @@ form.inline + form.inline,
 .cbi-button-reload {
     color: #fff !important;
     background-color: #ee5153 !important;
-    border-color: #2e6da4 !important;
 }
 
 .cbi-input-apply,
