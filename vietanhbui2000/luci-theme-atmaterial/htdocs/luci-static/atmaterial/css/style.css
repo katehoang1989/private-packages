@@ -928,7 +928,7 @@ form.inline + form.inline,
 }
 
 .cbi-tabmenu > li:hover {
-    background-color: #e9eef0;
+    background-color: #f3f6f7;
 }
 
 .cbi-tabmenu > li[class~="cbi-tab"] {
