@@ -910,7 +910,7 @@ form.inline + form.inline,
 .tabs > li[class~="active"],
 .tabs > li:hover {
     cursor: pointer;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #51aded;
 }
 
 .tabs > li[class~="active"] > a {
@@ -924,7 +924,7 @@ form.inline + form.inline,
     border-top: 1px solid #e4eaec;
     border-left: 1px solid #e4eaec;
     border-right: 1px solid #e4eaec;
-    background-color: #e1e3e3;
+    background-color: #e4eaec;
 }
 
 .cbi-tabmenu > li:hover {
@@ -1334,7 +1334,7 @@ td > .ifacebadge,
 .uci-change-list del,
 .uci-change-legend-label del {
     text-decoration: none;
-    border: 1px solid #3498db;
+    border: 1px solid #FF0000;
     background-color: #FFCCCC;
     display: block;
     font-style: normal;
@@ -1665,7 +1665,7 @@ header > .container > .pull-right > * {
 }
 
 .cbi-map fieldset ul li {
-    background:#e1e3e3;
+    background:#e4eaec;
     margin-right:0 !important;
 }
 /* fix system reboot */
