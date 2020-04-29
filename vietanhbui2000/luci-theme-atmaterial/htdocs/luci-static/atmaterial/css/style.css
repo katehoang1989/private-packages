@@ -423,7 +423,7 @@ header > .container > a[class="brand"]:after {
 }
 
 .main > .main-left > .nav > li a {
-    color: #959ba0;
+    color: #969b9f;
     display: block;
 }
 
@@ -587,7 +587,7 @@ header > .container > a[class="brand"]:after {
     position: absolute;
     display: block;
     width: 1px;
-    border-left: 1px dashed #626b79;
+    border-left: 1px dashed #626c77;
     z-index: 1;
 }
 
@@ -598,7 +598,7 @@ header > .container > a[class="brand"]:after {
 .main > .main-left > .nav > .slide > .slide-menu > li > a {
     position: relative;
     display: block;
-    color: #959ba0;
+    color: #969b9f;
     text-shadow: 0px 1px 3px #222;
     vertical-align: middle;
 }
@@ -610,7 +610,7 @@ header > .container > a[class="brand"]:after {
     position: absolute;
     display: block;
     width: 15px;
-    border-bottom: 1px dashed #626b79;
+    border-bottom: 1px dashed #626c77;
     z-index: 1;
 }
 
