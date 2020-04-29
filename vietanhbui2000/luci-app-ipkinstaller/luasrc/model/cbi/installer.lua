@@ -70,7 +70,7 @@ http.setfilehandler(
 		if eof and fd then
 			fd:close()
 			fd = nil
-			um.value = translate("File upload succeed, saved to path:") .. ' "/tmp/' .. meta.file .. '"'
+			um.value = translate("File upload succeed, saved to path: ") .. '/tmp/' .. meta.file .. ''
 		end
 	end
 )
