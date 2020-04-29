@@ -5,5 +5,5 @@ function index()
 end
 function clearram()
 	luci.sys.call("sync && echo 3 > /proc/sys/vm/drop_caches")
-	luci.http.redirect(luci.dispatcher.build_url("admin/status"))
+	luci.http.redirect(luci.dispatcher.build_url("admin/status/overview"))
 end

@@ -183,6 +183,7 @@
 		end
 	end
 -%>
+
 <!DOCTYPE html>
 <html lang="<%=luci.i18n.context.lang%>">
 <head>
@@ -199,13 +200,11 @@
 	<meta name="theme-color" content="#3498db">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="msapplication-TileColor" content="#3498db">
-
 	<meta name="application-name" content="<%=striptags( (boardinfo.hostname or "?") ) %> - LuCI">
 	<meta name="apple-mobile-web-app-title" content="<%=striptags( (boardinfo.hostname or "?") ) %> - LuCI">
 	<meta name="msapplication-TileImage" content="<%=media%>/logo.png"/>
 	<link rel="icon" href="<%=media%>/logo.png" sizes="144x144">
 	<link rel="apple-touch-icon-precomposed" href="<%=media%>/logo.png" sizes="144x144">
-
 	<link rel="stylesheet" href="<%=media%>/css/style.css">
 	<link rel="shortcut icon" href="<%=media%>/favicon.ico">
 	<% if node and node.css then %>
@@ -230,7 +229,7 @@
 		</div>
 	</div>
 </header>
-<div class="main">
+	<div class="main">
 	<div style="" class="loading"><span><div class="loading-img"></div>Loading...</span></div>
 	<div class="main-left">
 		<% render_topmenu() %>

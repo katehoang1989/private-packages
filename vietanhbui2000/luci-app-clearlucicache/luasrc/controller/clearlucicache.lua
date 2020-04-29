@@ -5,5 +5,5 @@ function index()
 end
 function clearlucicache()
 	luci.sys.call("rm /tmp/luci-modulecache/* /tmp/luci-indexcache")
-	luci.http.redirect(luci.dispatcher.build_url("admin/status"))
+	luci.http.redirect(luci.dispatcher.build_url("admin/status/overview"))
 end
