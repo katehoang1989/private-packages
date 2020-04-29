@@ -587,7 +587,7 @@ header > .container > a[class="brand"]:after {
     position: absolute;
     display: block;
     width: 1px;
-    border-left: 1px dashed #626c77;
+    border-left: 1px dashed #626b79;
     z-index: 1;
 }
 
@@ -610,7 +610,7 @@ header > .container > a[class="brand"]:after {
     position: absolute;
     display: block;
     width: 15px;
-    border-bottom: 1px dashed #626c77;
+    border-bottom: 1px dashed #626b79;
     z-index: 1;
 }
 
