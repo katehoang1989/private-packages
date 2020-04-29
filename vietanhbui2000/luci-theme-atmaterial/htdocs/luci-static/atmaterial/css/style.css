@@ -273,7 +273,7 @@ footer > a {
     top: 4rem;
     width: 17rem;
     bottom: 0rem;
-    background-color: #222222;
+    background-color: #2b323a;
 
     overflow-x: auto;
     position: fixed;
@@ -592,7 +592,7 @@ header > .container > a[class="brand"]:after {
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > .active {
-    background-color: #1a1a1a;
+    background-color: #252b31;
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > li > a {
