@@ -125,7 +125,7 @@ html, body {
     font-family: Roboto, 'Microsoft Yahei' !important;
     font-size:10pt;
     line-height: 150%;
-    color:#76838f;
+    color:#222222;
     /*min-width: 960px;*/
 }
 
@@ -134,7 +134,7 @@ body div {
 }
 
 a {
-    color: #76838f;
+    color: #222222;
     text-decoration: none;
 }
 
@@ -151,7 +151,7 @@ select {
 select,
 input,
 .cbi-dropdown {
-    color: #76838f;
+    color: #222222;
     padding: 6px 10px;
     margin: 0;
     height: 34px;
@@ -704,7 +704,7 @@ fieldset > fieldset {
     width: 100%;
     display: block;
     line-height: 1;
-    color: #76838f;
+    color: #222222;
     font-size: 10pt;
     padding-bottom: 10px;
 }
@@ -756,7 +756,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
     width: 100% !important;
     border-color:#ccc !important;
     height:20px !important;
-    color:#76838f !important;
+    color:#222222 !important;
 }
 
 #swaptotal > div > div,
@@ -903,7 +903,7 @@ form.inline + form.inline,
 .cbi-tabmenu > li > a,
 .tabs > li > a {
     text-decoration: none;
-    color: #76838f;
+    color: #222222;
     padding: 0.9rem 1.5rem;
 }
 
@@ -1284,7 +1284,7 @@ td > .ifacebadge,
 /*textarea*/
 
 .cbi-input-textarea {
-    color: #76838f;
+    color: #222222;
     padding: 6px 10px;
     margin: 0;
     line-height: normal;
@@ -1421,7 +1421,7 @@ td > .ifacebadge,
 }
 
 .ifacebox strong {
-    color:#76838f;
+    color:#222222;
 }
 
 .cbi-image-button {
@@ -1520,7 +1520,7 @@ small {
     white-space: pre-wrap;
     word-wrap: break-word;
     font-size: 10pt;
-    color: #76838f;
+    color: #222222;
 }
 
 input[name="ping"],
@@ -1560,7 +1560,7 @@ header > .container > .pull-right > * {
 
 .showSide:before {
     display:none;
-    color:#76838f;
+    color:#222222;
     content: "\e029";
     font-family: "advancedtomato" !important;
     font-weight: normal !important;
@@ -1696,7 +1696,7 @@ header > .container > .pull-right > * {
 .node-system-packages > .main table tr td:nth-last-child(1) {
     white-space: normal;
     font-size: small;
-    color: #76838f;
+    color: #222222;
 }
 
 .node-system-packages > .main .cbi-tabmenu > li > a, .tabs > li > a {
