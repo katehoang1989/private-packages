@@ -220,7 +220,7 @@
 <header>
 	<div class="container">
 		<span class="showSide"></span>
-		<a class="brand" href="#"><%=boardinfo.hostname or "?"%></a>
+		<a class="brand" href="<% if luci.dispatcher.context.authsession then %><%=url('admin/status/overview')%><% else %>#<% end %>"><%=boardinfo.hostname or "?"%></a>
 		<div class="pull-right">
 			<% render_changes() %>
 			<span id="xhr_poll_status" style="display:none" onclick="XHR.running() ? XHR.halt() : XHR.run()">
