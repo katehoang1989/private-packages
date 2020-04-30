@@ -867,6 +867,33 @@ form.inline + form.inline,
     background-color: #51aded;
 }
 
+.cbi-input-reset:hover,
+.cbi-button-reset:hover {
+    color: #fff !important;
+    background-color: #65727f !important;
+}
+
+.cbi-input-remove:hover,
+.cbi-button-add:hover,
+.cbi-button-edit:hover,
+.cbi-button-remove:hover {
+    color: #fff !important;
+    background-color: #f06365 !important;
+}
+
+.cbi-input-find:hover,
+.cbi-input-save:hover,
+.cbi-input-apply:hover,
+.cbi-input-reload:hover,
+.cbi-button-find:hover,
+.cbi-button-save:hover,
+.cbi-button-apply:hover,
+.cbi-button-reload:hover,
+.cbi-button-link:hover {
+    color: #fff !important;
+    background-color: #63b5ef;
+}
+
 .a-to-btn {
     text-decoration: none;
 }
