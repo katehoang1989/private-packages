@@ -873,7 +873,8 @@ form.inline + form.inline,
 .cbi-button-find,
 .cbi-button-save,
 .cbi-button-apply,
-.cbi-button-reload {
+.cbi-button-reload,
+.cbi-button-link {
     color: #fff !important;
     background-color: #51aded;
 }
