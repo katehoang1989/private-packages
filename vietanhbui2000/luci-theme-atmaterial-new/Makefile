@@ -1,13 +1,15 @@
-# LuCI Material Theme
-# Copyright 2015 Lutty Yang <lutty@wcan.in>
 #
-# Licensed under the Apache License v2.0
-# http://www.apache.org/licenses/LICENSE-2.0
+# Copyright (C) 2020 vietanhbui2000 (vietanhbui2000@gmail.com)
+#
+# This is free software, licensed under the Apache License, Version 2.0 .
+#
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=OpenTomato Theme
-LUCI_DEPENDS:=
+LUCI_TITLE:=AdvancedTomato Material Theme
+LUCI_PKGARCH:=all
+PKG_VERSION:=1.0
+PKG_RELEASE:=1
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
