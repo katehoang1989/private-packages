@@ -913,7 +913,7 @@ form.inline + form.inline,
 }
 
 .tabs > li:hover {
-    border-bottom: 0.18751rem solid #76838f;
+    border-bottom: 0.188rem solid #76838f;
 }
 
 .cbi-tabmenu {
