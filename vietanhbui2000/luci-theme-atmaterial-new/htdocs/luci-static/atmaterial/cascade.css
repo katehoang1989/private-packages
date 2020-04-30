@@ -19,10 +19,6 @@
  */
 @import url("fonts.css");
 
-strong {
-    font-weight: normal;
-}
-
 .table {
 	position: relative;
 	display: table;
@@ -382,6 +378,7 @@ footer > a {
 	display: block;
 	top: 80%;
 }
+
 .main-left {
 	position: fixed;
 	top: 4rem;

@@ -227,16 +227,43 @@ footer > a {
     100% {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
+}
+[id^="cbi-apply-"] {
+    position: absolute;
+    z-index: 200;
+    left: 50%;
+    top: 50%;
+    font-size: 1.2rem;
+    border-color: #525f7f;
+    text-align: center;
+    width: 300px;
+    height: 180px;
+    transform: translate(-50%, -50%);
+}
+
+[id^="cbi-apply-"]>.panel-title {
+    border-bottom: none;
+}
+
+[id^="cbi-apply-"]>img {
+    margin-top: 1rem;
+}
+
+[id^="cbi-apply-"]>[id^="cbi-apply-"] {
+    height: auto;
+    font-size: 1rem;
+    display: block;
+    top: 80%;
 }
 
 .main-left {
+    position: fixed;
     float: left;
     top: 4rem;
     bottom: 0rem;
     width: 17rem;
-    position: fixed;
     overflow-x: auto;
     background-color: #2b323a;
 }
@@ -928,14 +955,14 @@ form.inline + form.inline,
 }
 
 .cbi-value-title {
+    display: table-cell;
+    text-align: right;
     word-wrap: break-word;
     line-height: 150%;
     vertical-align: middle;
-    padding:6px 10px;
+    padding: 6px 10px;
     width: 23rem;
     float: left;
-    text-align: right;
-    display: table-cell;
 }
 
 .cbi-value {
@@ -970,6 +997,7 @@ form.inline + form.inline,
 .cbi-map-descr {
     margin-bottom:10px;
     padding-left:5px;
+    color: #03A9F4;
     font-size: small;
 }
 
@@ -1500,8 +1528,8 @@ header > .container > .pull-right > * {
 }
 
 .label {
-    padding: 0.5rem 1rem;
-    font-size: 12pt;
+    padding: 0.3rem 0.8rem;
+    font-size: 10pt;
     font-weight: bold;
     color: #ffffff !important;
     text-transform: uppercase;
@@ -1622,11 +1650,12 @@ header > .container > .pull-right > * {
 }
 
 .cbi-map fieldset h3 {
-    padding:10px 0;
+    padding: 10px 0;
 }
 
 .cbi-map fieldset ul li {
-    margin-right:0 !important;
+    background-color: #e7ecee;
+    margin-right: 0 !important;
 }
 
 /* fix system reboot */
