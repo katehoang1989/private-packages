@@ -980,7 +980,7 @@ form.inline + form.inline,
     vertical-align: middle;
     display: inline-block;
     width: 100%;
-    border-top:1px dashed #e4eaec;
+    border-bottom: 1px dashed #e4eaec;
 }
 
 .cbi-section-table-descr > .cbi-section-table-cell,
@@ -1321,7 +1321,8 @@ td > .ifacebadge,
 .uci-change-list ins,
 .uci-change-legend-label ins {
     text-decoration: none;
-    border: 1px solid #767676;
+    border: 1px solid #00FF00;
+    background-color: #CCFFCC;
     display: block;
     padding: 2px;
 }
@@ -1329,7 +1330,8 @@ td > .ifacebadge,
 .uci-change-list del,
 .uci-change-legend-label del {
     text-decoration: none;
-    border: 1px solid #767676;
+    border: 1px solid #FF0000;
+    background-color: #FFCCCC;
     display: block;
     font-style: normal;
     padding: 2px;
@@ -1338,7 +1340,8 @@ td > .ifacebadge,
 .uci-change-list var,
 .uci-change-legend-label var {
     text-decoration: none;
-    border: 1px solid #767676;
+    border: 1px solid #CCCCCC;
+    background-color: #EEEEEE;
     display: block;
     font-style: normal;
     padding: 2px;
