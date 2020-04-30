@@ -1,4 +1,4 @@
-/**
+/*
  *  Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
  *
  *  luci-theme-material
@@ -18,7 +18,44 @@
  *  Licensed to the public under the Apache License 2.0
  */
 
-@import url("fonts.css");
+/*
+ *  Font generate by Icomoon<icomoon.io>
+ */
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/font.eot');
+    src: url('../fonts/font.eot') format('embedded-opentype'),
+    url('../fonts/font.ttf') format('truetype'),
+    url('../fonts/font.woff') format('woff'),
+    url('../fonts/font.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "advancedtomato";
+    src:url("../fonts/advancedtomato.eot");
+    src:url("../fonts/advancedtomato.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/advancedtomato.woff") format("woff"),
+        url("../fonts/advancedtomato.ttf") format("truetype"),
+        url("../fonts/advancedtomato.svg#advancedtomato") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 .table { display: table; }
 .tr { display: table-row; }
@@ -227,43 +264,16 @@ footer > a {
     100% {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
-}
-[id^="cbi-apply-"] {
-    position: absolute;
-    z-index: 200;
-    left: 50%;
-    top: 50%;
-    font-size: 1.2rem;
-    border-color: #525f7f;
-    text-align: center;
-    width: 300px;
-    height: 180px;
-    transform: translate(-50%, -50%);
-}
-
-[id^="cbi-apply-"]>.panel-title {
-    border-bottom: none;
-}
-
-[id^="cbi-apply-"]>img {
-    margin-top: 1rem;
-}
-
-[id^="cbi-apply-"]>[id^="cbi-apply-"] {
-    height: auto;
-    font-size: 1rem;
-    display: block;
-    top: 80%;
 }
 
 .main-left {
-    position: fixed;
     float: left;
     top: 4rem;
     bottom: 0rem;
     width: 17rem;
+    position: fixed;
     overflow-x: auto;
     background-color: #2b323a;
 }
@@ -662,10 +672,12 @@ fieldset {
     font-style: normal;
     line-height: 1;
     font-family: inherit;
+
     min-width: inherit;
-    /*overflow-x: hidden;*/
+    /* overflow-x: hidden; */
     overflow-x: auto;
     overflow-y: hidden;
+
     border-radius: 0;
     background-color: #FFF;
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
@@ -867,33 +879,6 @@ form.inline + form.inline,
     background-color: #51aded;
 }
 
-.cbi-input-reset:hover,
-.cbi-button-reset:hover {
-    color: #fff !important;
-    background-color: #65727f !important;
-}
-
-.cbi-input-remove:hover,
-.cbi-button-add:hover,
-.cbi-button-edit:hover,
-.cbi-button-remove:hover {
-    color: #fff !important;
-    background-color: #f06365 !important;
-}
-
-.cbi-input-find:hover,
-.cbi-input-save:hover,
-.cbi-input-apply:hover,
-.cbi-input-reload:hover,
-.cbi-button-find:hover,
-.cbi-button-save:hover,
-.cbi-button-apply:hover,
-.cbi-button-reload:hover,
-.cbi-button-link:hover {
-    color: #fff !important;
-    background-color: #63b5ef;
-}
-
 .a-to-btn {
     text-decoration: none;
 }
@@ -982,14 +967,14 @@ form.inline + form.inline,
 }
 
 .cbi-value-title {
-    display: table-cell;
-    text-align: right;
     word-wrap: break-word;
     line-height: 150%;
     vertical-align: middle;
-    padding: 6px 10px;
+    padding:6px 10px;
     width: 23rem;
     float: left;
+    text-align: right;
+    display: table-cell;
 }
 
 .cbi-value {
@@ -1024,7 +1009,6 @@ form.inline + form.inline,
 .cbi-map-descr {
     margin-bottom:10px;
     padding-left:5px;
-    color: #03A9F4;
     font-size: small;
 }
 
@@ -1294,7 +1278,7 @@ td > .ifacebadge,
     align-items: center;
 }
 
-/* textarea */
+/*textarea*/
 
 .cbi-input-textarea {
     color: #76838f;
@@ -1555,8 +1539,8 @@ header > .container > .pull-right > * {
 }
 
 .label {
-    padding: 0.3rem 0.8rem;
-    font-size: 10pt;
+    padding: 0.5rem 1rem;
+    font-size: 12pt;
     font-weight: bold;
     color: #ffffff !important;
     text-transform: uppercase;
@@ -1677,12 +1661,11 @@ header > .container > .pull-right > * {
 }
 
 .cbi-map fieldset h3 {
-    padding: 10px 0;
+    padding:10px 0;
 }
 
 .cbi-map fieldset ul li {
-    background-color: #e7ecee;
-    margin-right: 0 !important;
+    margin-right:0 !important;
 }
 
 /* fix system reboot */
