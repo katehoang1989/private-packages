@@ -46,6 +46,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "advancedtomato";
     src:url("../fonts/advancedtomato.eot");
@@ -57,11 +58,26 @@
     font-style: normal;
 }
 
-.table { display: table; }
-.tr { display: table-row; }
-.thead { display: table-header-group; }
-.tbody { display: table-row-group; }
-.tfoot { display: table-footer-group; }
+.table {
+    display: table;
+}
+
+.tr {
+    display: table-row;
+}
+
+.thead {
+    display: table-header-group;
+}
+
+.tbody {
+    display: table-row-group;
+}
+
+.tfoot {
+    display: table-footer-group;
+}
+
 .td, .th {
     vertical-align: middle;
     text-align: center;
@@ -69,7 +85,6 @@
     padding: 12px;
     line-height: 1.42857143;
     border-top: 1px dashed #EEE;
-
     white-space: nowrap;
 }
 
@@ -111,7 +126,6 @@
     color: inherit;
     clear:both;
 }
-
 
 html {
     -webkit-text-size-adjust: 100%;
@@ -877,6 +891,33 @@ form.inline + form.inline,
 .cbi-button-link {
     color: #fff !important;
     background-color: #51aded;
+}
+
+.cbi-input-reset:hover,
+.cbi-button-reset:hover {
+    color: #fff !important;
+    background-color: #65727f !important;
+}
+
+.cbi-input-remove:hover,
+.cbi-button-add:hover,
+.cbi-button-edit:hover,
+.cbi-button-remove:hover {
+    color: #fff !important;
+    background-color: #f06365 !important;
+}
+
+.cbi-input-find:hover,
+.cbi-input-save:hover,
+.cbi-input-apply:hover,
+.cbi-input-reload:hover,
+.cbi-button-find:hover,
+.cbi-button-save:hover,
+.cbi-button-apply:hover,
+.cbi-button-reload:hover,
+.cbi-button-link:hover {
+    color: #fff !important;
+    background-color: #63b5ef;
 }
 
 .a-to-btn {
