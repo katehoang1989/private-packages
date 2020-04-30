@@ -29,12 +29,12 @@
         return text.replace(/[ \t\n\r]+/g, " ");
     }
 
-
     var lastNode = undefined;
     var mainNodeName = undefined;
 
     var nodeUrl = "";
     (function(node){
+        var luciLocation;
         if (node[0] == "admin"){
             luciLocation = [node[1], node[2]];
         }else{
@@ -207,10 +207,12 @@
         }
     });*/
 
-
     $(".main-right").focus();
     $(".main-right").blur();
     $("input").attr("size", "0");
+    $(".cbi-button-up").val("__");
+    $(".cbi-button-down").val("__");
+    $(".slide > a").removeAttr("href");
 
     if (mainNodeName != undefined) {
         console.log(mainNodeName);
