@@ -1702,11 +1702,11 @@ header > .container > .pull-right > * {
 }
 
 .cbi-map fieldset h3 {
-    padding:10px 0;
+    padding: 10px 0;
 }
 
 .cbi-map fieldset ul li {
-    margin-right:0 !important;
+    margin-right: 0 !important;
 }
 
 /* fix system reboot */
