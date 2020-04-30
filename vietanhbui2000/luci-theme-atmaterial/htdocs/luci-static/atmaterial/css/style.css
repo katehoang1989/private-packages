@@ -1,4 +1,4 @@
-/*
+/**
  *  Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
  *
  *  luci-theme-material
@@ -18,14 +18,14 @@
  *  Licensed to the public under the Apache License 2.0
  */
 
-/*
+/**
  *  Font generate by Icomoon<icomoon.io>
  */
 
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium-webfont.woff') format('woff');
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -275,6 +275,7 @@ footer > a {
         -ms-transform: rotate(0);
         transform: rotate(0);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
@@ -1609,7 +1610,6 @@ header > .container > .pull-right > * {
     left:10px;
     position: relative;
     vertical-align: middle;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
