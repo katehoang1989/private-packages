@@ -1,4 +1,4 @@
-/**
+/*
  *  Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
  *
  *  luci-theme-material
@@ -911,7 +911,7 @@ form.inline + form.inline,
 }
 
 .tabs > li:hover {
-    border-bottom: 0.18751rem solid #69686a;
+    border-bottom: 0.18751rem solid #76838f;
 }
 
 .cbi-tabmenu {
