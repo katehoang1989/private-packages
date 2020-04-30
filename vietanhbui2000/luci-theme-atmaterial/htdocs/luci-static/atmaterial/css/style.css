@@ -852,27 +852,27 @@ form.inline + form.inline,
 }
 
 .cbi-input-reset,
-.cbi-button-reset,
-.cbi-input-remove,
-.cbi-button-remove {
+.cbi-button-reset, {
     color: #fff !important;
     background-color: #536270 !important;
 }
 
-.cbi-input-find,
-.cbi-input-save,
-.cbi-input-reload,
+.cbi-input-remove,
 .cbi-button-add,
-.cbi-button-find,
-.cbi-button-save,
-.cbi-button-reload {
+.cbi-button-edit,
+.cbi-button-remove {
     color: #fff !important;
     background-color: #ee5153 !important;
 }
 
+.cbi-input-find,
+.cbi-input-save,
 .cbi-input-apply,
+.cbi-input-reload,
+.cbi-button-find,
+.cbi-button-save,
 .cbi-button-apply,
-.cbi-button-edit {
+.cbi-button-reload {
     color: #fff !important;
     background-color: #51aded;
 }
