@@ -68,7 +68,7 @@
     display: table-cell;
     padding: 12px;
     line-height: 1.42857143;
-    border-bottom: 1px dashed #EEE;
+    border-top: 1px dashed #EEE;
 
     white-space: nowrap;
 }
@@ -720,7 +720,7 @@ table > tbody > tr > td, table > tbody > tr > th, table > tfoot > tr > td, table
 .table > .tbody > .tr > .td, .table > .tbody > .tr > .th, .table > .tfoot > .tr > .td, .table > .tfoot > .tr > .th, .table > .thead > .tr > .td, .table > .thead > .tr > .th {
     padding: 12px;
     line-height: 1.42857143;
-    border-bottom: 1px dashed #EEE;
+    border-top: 1px dashed #EEE;
     white-space: nowrap;
 }
 
