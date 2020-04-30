@@ -1321,8 +1321,7 @@ td > .ifacebadge,
 .uci-change-list ins,
 .uci-change-legend-label ins {
     text-decoration: none;
-    border: 1px solid #00FF00;
-    background-color: #CCFFCC;
+    border: 1px solid #767676;
     display: block;
     padding: 2px;
 }
@@ -1330,8 +1329,7 @@ td > .ifacebadge,
 .uci-change-list del,
 .uci-change-legend-label del {
     text-decoration: none;
-    border: 1px solid #FF0000;
-    background-color: #FFCCCC;
+    border: 1px solid #767676;
     display: block;
     font-style: normal;
     padding: 2px;
@@ -1340,8 +1338,7 @@ td > .ifacebadge,
 .uci-change-list var,
 .uci-change-legend-label var {
     text-decoration: none;
-    border: 1px solid #CCCCCC;
-    background-color: #EEEEEE;
+    border: 1px solid #767676;
     display: block;
     font-style: normal;
     padding: 2px;
