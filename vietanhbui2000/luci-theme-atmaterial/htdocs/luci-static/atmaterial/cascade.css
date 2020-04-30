@@ -1,4 +1,4 @@
-/*
+/**
  *  Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
  *
  *  luci-theme-material
@@ -635,12 +635,10 @@ fieldset {
     font-style: normal;
     line-height: 1;
     font-family: inherit;
-
     min-width: inherit;
-    /* overflow-x: hidden; */
+    /*overflow-x: hidden;*/
     overflow-x: auto;
     overflow-y: hidden;
-
     border-radius: 0;
     background-color: #FFF;
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
@@ -1241,7 +1239,7 @@ td > .ifacebadge,
     align-items: center;
 }
 
-/*textarea*/
+/* textarea */
 
 .cbi-input-textarea {
     color: #76838f;
