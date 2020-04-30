@@ -330,7 +330,7 @@ header > .container > .brand {
     letter-spacing: 3px;
 }
 header > .container > a[class="brand"]:after {
-    content: "®";
+    content: "™";
     font-size: 14px;
     font-family: Tahoma;
     position: absolute;
