@@ -1,8 +1,7 @@
 module("luci.controller.filebrowser", package.seeall)
 
 function index()
-
-    page = entry({"admin", "services", "filebrowser"}, template("filebrowser"), _("File Browser"), 97)
+    page = entry({"admin", "services", "filebrowser"}, template("filebrowser"), _("File Browser"), 9997)
     page.i18n = "base"
     page.dependent = true
 
@@ -20,7 +19,6 @@ function index()
 
     page = entry({"admin", "services", "filebrowser_upload"}, call("filebrowser_upload"), nil)
     page.leaf = true
-
 end
 
 function list_response(path, success)
