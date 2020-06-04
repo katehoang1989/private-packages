@@ -17,7 +17,6 @@
  *
  *  Licensed to the public under the Apache License 2.0
  */
-
 (function ($) {
     $(".main > .loading").fadeOut();
 
@@ -26,7 +25,6 @@
      * @param text
      * @returns {string}
      */
-
     function trimText(text) {
         return text.replace(/[ \t\n\r]+/g, " ");
     }
@@ -37,6 +35,7 @@
 
     var nodeUrl = "";
     (function(node){
+        var luciLocation;
         if (node[0] == "admin"){
             luciLocation = [node[1], node[2]];
         }else{
@@ -55,7 +54,6 @@
      * get the current node by Burl (primary)
      * @returns {boolean} success?
      */
-
     function getCurrentNodeByUrl() {
         var ret = false;
         if (!$('body').hasClass('logged-in')) {
@@ -85,7 +83,6 @@
     /**
      * menu click
      */
-
     $(".main > .main-left > .nav > .slide > .menu").click(function () {
         var ul = $(this).next(".slide-menu");
         var menu = $(this);
@@ -105,7 +102,6 @@
     /**
      * hook menu click and add the hash
      */
-
     $(".main > .main-left > .nav > .slide > .slide-menu > li > a").click(function () {
         if (lastNode != undefined) lastNode.removeClass("active");
         $(this).parent().addClass("active");
@@ -116,7 +112,6 @@
     /**
      * fix menu click
      */
-
     $(".main > .main-left > .nav > .slide > .slide-menu > li").click(function () {
         if (lastNode != undefined) lastNode.removeClass("active");
         $(this).addClass("active");
@@ -128,7 +123,6 @@
     /**
      * get current node and open it
      */
-
     if (getCurrentNodeByUrl()) {
         mainNodeName = "node-" + luciLocation[0] + "-" + luciLocation[1];
         mainNodeName = mainNodeName.replace(/[ \t\n\r\/]+/g, "_").toLowerCase();
@@ -141,7 +135,6 @@
     /**
      * hook other "A Label" and add hash to it.
      */
-
     $("#maincontent > .container").find("a").each(function () {
         var that = $(this);
         var onclick = that.attr("onclick");
@@ -159,7 +152,6 @@
     /**
      * Sidebar expand
      */
-
     var showSide = false;
     $(".showSide").click(function () {
         if (showSide) {
@@ -167,14 +159,13 @@
             $(".main-left").stop(true).animate({
                 width: "0"
             }, "fast");
-            $(".main-right").css("overflow-y", "auto");
+            $(".main-right").css("overflow-y", "visible");
             showSide = false;
         } else {
             $(".darkMask").stop(true).fadeIn("fast");
             $(".main-left").stop(true).animate({
                 width: "15rem"
             }, "fast");
-            $(".main-right").css("overflow-y", "hidden");
             showSide = true;
         }
     });
@@ -187,7 +178,7 @@
             $(".main-left").stop(true).animate({
                 width: "0"
             }, "fast");
-            $(".main-right").css("overflow-y", "auto");
+            $(".main-right").css("overflow-y", "visible");
         }
     });
 
@@ -203,7 +194,6 @@
     /**
      * fix legend position
      */
-
     $("legend").each(function () {
         var that = $(this);
         that.after("<span class='panel-title'>" + that.text() + "</span>");
@@ -216,6 +206,7 @@
             that.css("display", "none");
         }
     });*/
+
 
     $(".main-right").focus();
     $(".main-right").blur();
